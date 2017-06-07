@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="outer">
+      <section>
+        <header class="header">
+          <h1>Sign up</h1>
+        </header>
+        <form class="form" action="index.html" method="POST">
+          <div class="signup-type">
+            <div class="radio">
+              <input type="radio" name="type" value="admin">
+              <label for="admin">admin</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="type" value="personal" checked="checked">
+              <label for="personal">personal</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="type" value="personal">
+              <label for="guest">guest</label>
+            </div>
+          </div>
+          <div class="text-input">
+            <div class="info-row">
+                <div class="info">
+                  <label class="label">
+                    <span class="field">name</span>
+                    <input class="field" type="text" name="user" />
+                  </label>
+                </div>
+                <div class="info">
+                  <label class="label">
+                    <span class="field">email</span>
+                    <input class="field" type="email" name="email" />
+                  </label>
+                </div>
+            </div>
+            <div class="password-row">
+              <div class="info">
+                <label class="label">
+                  <span class="field">password</span>
+                  <input class="field" type="password" name="pwd" />
+                </label>
+              </div>
+              <div class="info">
+                <label class="label">
+                  <span class="field">confirm password</span>
+                  <input class="field" type="password" name="pwd-confirm" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="file-upload">
+                <div><label for="fileUpload">profile picture</label></div>
+                <div><input id="upload-btn" type="file" id="fileUpload"></div>
+            </div>
+              <input class="signup-btn" type="button" name="signup-btn" value="sign up">
+          </div>
+        </form>
+      </section>
+  </div>
+</body>
+</html>
